@@ -1,0 +1,19 @@
+body {
+  font-family: Arial;
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  margin: 8px;
+  display: inline-block;
+  border-radius: 6px;
+}
+
+.free {
+  background-color: green;
+}
+
+.occupied {
+  background-color: red;
+}
