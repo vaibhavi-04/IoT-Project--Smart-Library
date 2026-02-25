@@ -71,8 +71,12 @@ To help students decide when and where to study using real-time IoT data and pre
 
 # 👥 Contributors
 Astha Daga ( 22JE0195)
+
 Anjali ( 22JE0117)
+
 Aadhya Jain (22JE0002)
+
 Gaonkar Vaibhavi Ramakant (22JE0348)
+
 Sapana Kumari Bairwa (22JE0864)
 
