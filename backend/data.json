@@ -1,90 +1,25 @@
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "High", "timestamp": "2026-02-25T16:24:15.627706"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "High", "timestamp": "2026-02-25T16:24:20.633091"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Low", "timestamp": "2026-02-25T16:24:25.637734"}
-{"occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "Low", "timestamp": "2026-02-25T16:24:30.643776"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "High", "timestamp": "2026-02-25T16:24:35.649674"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:24:40.654329"}
-{"occupied_seats": 7, "total_seats": 10, "occupancy_percentage": 70.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:24:45.660077"}
-{"occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "Low", "timestamp": "2026-02-25T16:24:50.666351"}
-{"occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:24:55.671307"}
-{"occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "High", "timestamp": "2026-02-25T16:25:00.676579"}
-{"occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "High", "timestamp": "2026-02-25T16:25:05.681673"}
-{"occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:25:10.687531"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "High", "timestamp": "2026-02-25T16:25:15.693242"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:25:20.697491"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:25:25.702771"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:25:30.707479"}
-{"occupied_seats": 7, "total_seats": 10, "occupancy_percentage": 70.0, "noise_level": "High", "timestamp": "2026-02-25T16:25:35.713346"}
-{"occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Low", "timestamp": "2026-02-25T16:25:40.718433"}
-{"occupied_seats": 10, "total_seats": 10, "occupancy_percentage": 100.0, "noise_level": "Low", "timestamp": "2026-02-25T16:25:45.724171"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Low", "timestamp": "2026-02-25T16:25:50.728877"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "High", "timestamp": "2026-02-25T16:25:55.734070"}
-{"occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:26:00.738324"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "High", "timestamp": "2026-02-25T16:26:05.741657"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "High", "timestamp": "2026-02-25T16:26:10.747867"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Low", "timestamp": "2026-02-25T16:26:15.752013"}
-{"occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "High", "timestamp": "2026-02-25T16:26:20.756551"}
-{"occupied_seats": 7, "total_seats": 10, "occupancy_percentage": 70.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:32:21.649785"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "High", "timestamp": "2026-02-25T16:32:26.655501"}
-{"occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "Low", "timestamp": "2026-02-25T16:32:31.659742"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "timestamp": "2026-02-25T16:32:36.664902"}
-{"occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "Low", "timestamp": "2026-02-25T16:32:41.670224"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "High", "timestamp": "2026-02-25T16:32:46.676302"}
-{"occupied_seats": 7, "total_seats": 10, "occupancy_percentage": 70.0, "noise_level": "High", "timestamp": "2026-02-25T16:32:51.682385"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Low", "timestamp": "2026-02-25T16:32:56.686898"}
-{"occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:33:01.691864"}
-{"occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "High", "timestamp": "2026-02-25T16:33:06.696808"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "timestamp": "2026-02-25T16:33:11.701213"}
-{"occupied_seats": 10, "total_seats": 10, "occupancy_percentage": 100.0, "noise_level": "Low", "timestamp": "2026-02-25T16:33:16.706508"}
-{"occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-02-25T16:33:21.711110"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Low", "timestamp": "2026-02-25T16:33:26.717128"}
-{"occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "High", "timestamp": "2026-02-25T16:33:31.722327"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "High", "timestamp": "2026-02-25T16:33:36.726909"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "High", "timestamp": "2026-02-25T16:33:41.732196"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "High", "timestamp": "2026-02-25T16:33:46.736506"}
-{"occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "High", "timestamp": "2026-02-25T16:33:51.741477"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "High", "timestamp": "2026-02-25T16:33:56.747007"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "High", "timestamp": "2026-02-25T16:34:01.752036"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:34:06.756826"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "timestamp": "2026-02-25T16:34:11.761633"}
-{"occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "Low", "timestamp": "2026-02-25T16:34:16.765291"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "High", "timestamp": "2026-02-25T16:34:21.770619"}
-{"occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:34:26.775686"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "High", "timestamp": "2026-02-25T16:34:31.780683"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "Low", "timestamp": "2026-02-25T16:34:36.785831"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "timestamp": "2026-02-25T16:40:03.709147"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Low", "timestamp": "2026-02-25T16:40:08.715223"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:40:13.721807"}
-{"occupied_seats": 10, "total_seats": 10, "occupancy_percentage": 100.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:40:18.726195"}
-{"occupied_seats": 7, "total_seats": 10, "occupancy_percentage": 70.0, "noise_level": "High", "timestamp": "2026-02-25T16:40:23.730735"}
-{"occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Low", "timestamp": "2026-02-25T16:40:28.735997"}
-{"occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:40:33.741058"}
-{"occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "High", "timestamp": "2026-02-25T16:40:38.746589"}
-{"occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "High", "timestamp": "2026-02-25T16:40:43.752381"}
-{"occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:40:48.758100"}
-{"occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "High", "timestamp": "2026-02-25T16:40:53.762192"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "High", "timestamp": "2026-02-25T16:40:58.767984"}
-{"occupied_seats": 10, "total_seats": 10, "occupancy_percentage": 100.0, "noise_level": "Low", "timestamp": "2026-02-25T16:41:03.773784"}
-{"occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "High", "timestamp": "2026-02-25T16:41:08.779411"}
-{"occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:41:13.784567"}
-{"occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "High", "timestamp": "2026-02-25T16:41:18.790814"}
-{"occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:41:23.796251"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:41:28.800963"}
-{"occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-02-25T16:41:33.806265"}
-{"occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:41:38.810581"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:41:43.816375"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Low", "timestamp": "2026-02-25T16:41:48.822013"}
-{"occupied_seats": 10, "total_seats": 10, "occupancy_percentage": 100.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:41:53.827634"}
-{"occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:41:58.831826"}
-{"occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:42:03.837254"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Low", "timestamp": "2026-02-25T16:42:08.843135"}
-{"occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:42:13.848009"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "High", "timestamp": "2026-02-25T16:42:18.853785"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "High", "timestamp": "2026-02-25T16:42:23.858200"}
-{"occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "High", "timestamp": "2026-02-25T16:42:28.864220"}
-{"occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "Low", "timestamp": "2026-02-25T16:42:33.869437"}
-{"occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "High", "timestamp": "2026-02-25T16:42:38.875093"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "High", "timestamp": "2026-02-25T16:42:43.880273"}
-{"occupied_seats": 9, "total_seats": 10, "occupancy_percentage": 90.0, "noise_level": "High", "timestamp": "2026-02-25T16:42:48.884934"}
-{"occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Medium", "timestamp": "2026-02-25T16:42:53.892228"}
-{"occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "Low", "timestamp": "2026-02-25T16:42:58.899217"}
+{"seats": [1, 1, 1, 0, 1, 0, 1, 0, 1, 0], "occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "timestamp": "2026-03-28T19:40:15.633627"}
+{"seats": [1, 1, 1, 0, 1, 0, 1, 0, 1, 0], "occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "timestamp": "2026-03-28T19:40:33.704062"}
+{"seats": [1, 1, 1, 0, 1, 0, 1, 0, 1, 0], "occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "timestamp": "2026-03-28T19:40:50.989675"}
+{"seats": [1, 1, 1, 1, 1, 0, 1, 0, 1, 0], "occupied_seats": 7, "total_seats": 10, "occupancy_percentage": 70.0, "noise_level": "Low", "timestamp": "2026-03-28T19:41:04.784851"}
+{"seats": [1, 1, 1, 1, 1, 0, 1, 0, 1, 0], "occupied_seats": 7, "total_seats": 10, "occupancy_percentage": 70.0, "noise_level": "Low", "timestamp": "2026-03-28T19:41:35.948827"}
+{"seats": [1, 1, 1, 1, 1, 0, 1, 1, 1, 0], "occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "Low", "timestamp": "2026-03-28T19:41:48.485466"}
+{"seats": [1, 1, 1, 1, 1, 0, 1, 1, 1, 0], "occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "Low", "timestamp": "2026-03-28T19:42:01.880920"}
+{"seats": [1, 1, 1, 1, 1, 0, 1, 1, 1, 0], "occupied_seats": 8, "total_seats": 10, "occupancy_percentage": 80.0, "noise_level": "Low", "timestamp": "2026-03-28T19:45:12.876631"}
+{"seats": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Low", "timestamp": "2026-03-28T19:46:23.415873"}
+{"seats": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0], "occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "Low", "timestamp": "2026-03-28T19:46:36.768198"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-03-28T19:46:51.083049"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-03-28T19:47:02.838018"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-03-28T19:47:14.547936"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 1, 0], "occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Low", "timestamp": "2026-03-28T19:48:45.401078"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 1, 0], "occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Low", "timestamp": "2026-03-28T19:48:59.953513"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 1, 0], "occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Low", "timestamp": "2026-03-28T19:49:12.569157"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 1, 0], "occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Low", "timestamp": "2026-03-28T19:49:25.058963"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 1, 0], "occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Low", "timestamp": "2026-03-28T19:50:29.812380"}
+{"seats": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Low", "timestamp": "2026-03-28T19:50:47.678623"}
+{"seats": [0, 0, 0, 0, 0, 0, 0, 1, 0, 0], "occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "Low", "timestamp": "2026-03-28T19:50:59.713386"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-03-28T19:51:12.164787"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-03-28T19:51:23.470324"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-03-28T19:51:35.519996"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-03-28T19:51:47.894165"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 1, 0, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "timestamp": "2026-03-28T19:52:00.264454"}

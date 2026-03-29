@@ -1,37 +1,13 @@
+const API = "http://127.0.0.1:5000";
+
 let chart;
 let labels = [];
-let occupancyData = [];
+let dataPoints = [];
 const totalSeats = 10;
-const API_URL = "http://127.0.0.1:5000/api/latest";
 
-function createChart() {
-    const ctx = document.getElementById("occupancyChart").getContext("2d");
-
-    chart = new Chart(ctx, {
-        type: "line",
-        data: {
-            labels: labels,
-            datasets: [{
-                label: "Occupancy %",
-                data: occupancyData,
-                borderColor: "blue",
-                fill: false
-            }]
-        },
-        options: {
-            scales: {
-                y: {
-                    min: 0,
-                    max: 100
-                }
-            }
-        }
-    });
-}
-
+// ---------------- CREATE SEATS ----------------
 function createSeats() {
     const container = document.getElementById("seats");
-    container.innerHTML = "";
 
     for (let i = 0; i < totalSeats; i++) {
         const seat = document.createElement("div");
@@ -41,45 +17,85 @@ function createSeats() {
     }
 }
 
-async function fetchData() {
-    const res = await fetch(API_URL);
-    const data = await res.json();
-
-    if (data.occupied_seats === undefined) return;
-
-    document.getElementById("stats").innerHTML =
-        "Occupied Seats: " + data.occupied_seats +
-        " / " + data.total_seats;
-
-    document.getElementById("noise").innerHTML =
-        "Noise Level: " + data.noise_level +
-        " | Predicted Crowd: " + data.predicted_crowd;
-
-    updateSeats(data.occupied_seats);
-
-    // --------- Graph Update Logic ----------
-    const now = new Date().toLocaleTimeString();
-
-    labels.push(now);
-    occupancyData.push(data.occupancy_percentage);
-
-    if (labels.length > 10) {
-        labels.shift();
-        occupancyData.shift();
-    }
-
-    chart.update();
-}
-
+// ---------------- UPDATE SEATS ----------------
 function updateSeats(occupied) {
     for (let i = 0; i < totalSeats; i++) {
         const seat = document.getElementById("seat-" + i);
-        seat.className = i < occupied ? "seat occupied" : "seat free";
+
+        if (i < occupied) {
+            seat.classList.add("occupied");
+            seat.classList.remove("free");
+        } else {
+            seat.classList.add("free");
+            seat.classList.remove("occupied");
+        }
     }
 }
 
+// ---------------- NOISE COLOR ----------------
+function updateNoise(level) {
+    const box = document.getElementById("noiseBox");
 
+    if (level === "Low") box.style.background = "green";
+    else if (level === "Medium") box.style.background = "orange";
+    else box.style.background = "red";
 
+    box.innerText = "Noise: " + level;
+}
+
+// ---------------- CREATE CHART ----------------
+function createChart() {
+    const ctx = document.getElementById("chart");
+
+    chart = new Chart(ctx, {
+        type: "line",
+        data: {
+            labels: labels,
+            datasets: [{
+                label: "Occupancy %",
+                data: dataPoints
+            }]
+        }
+    });
+}
+
+// ---------------- FETCH DATA ----------------
+async function fetchData() {
+    try {
+        const res = await fetch(API + "/api/latest");
+        if (!res.ok) return;
+
+        const data = await res.json();
+        if (!data.occupied_seats) return;
+
+        document.getElementById("stats").innerText =
+            `Seats: ${data.occupied_seats}/${data.total_seats}`;
+
+        document.getElementById("prediction").innerText =
+            `Predicted Crowd: ${data.predicted_crowd}`;
+
+        updateSeats(data.occupied_seats);
+        updateNoise(data.noise_level);
+
+        // Update chart
+        labels.push(new Date().toLocaleTimeString());
+        dataPoints.push(data.occupancy_percentage);
+
+        if (labels.length > 10) {
+            labels.shift();
+            dataPoints.shift();
+        }
+
+        chart.update();
+
+    } catch (err) {
+        console.log("Server error");
+    }
+}
+
+// ---------------- INIT ----------------
 createSeats();
 createChart();
+
+// fetch every 5 sec
 setInterval(fetchData, 5000);

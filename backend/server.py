@@ -3,69 +3,73 @@ import numpy as np
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from datetime import datetime
-import json
-import os
 
 app = Flask(__name__)
 CORS(app)
 
 # Load AI model
-MODEL_PATH = "../ai/model.pkl"
-
-with open(MODEL_PATH, "rb") as f:
+with open("../ai/model.pkl", "rb") as f:
     model = pickle.load(f)
-DATA_FILE = "data.json"
 
-# Ensure data file exists
-if not os.path.exists(DATA_FILE):
-    with open(DATA_FILE, "w") as f:
-        pass
+# In-memory storage (FAST + NO RELOAD)
+latest_data = {}
+history = []   # for graph
 
-
-# API to receive sensor data (POST)
+# ---------------- POST (ESP32 → Backend) ----------------
 @app.route("/api/data", methods=["POST"])
 def receive_data():
+    global latest_data, history
+
     data = request.json
     data["timestamp"] = datetime.now().isoformat()
 
-    with open(DATA_FILE, "a") as f:
-        f.write(json.dumps(data) + "\n")
+    # Save latest
+    latest_data = data
 
-    return {"status": "data stored successfully"}
+    # Store for graph
+    history.append({
+        "time": datetime.now().strftime("%H:%M:%S"),
+        "occupancy": data["occupancy_percentage"]
+    })
+
+    # keep last 20 points
+    if len(history) > 20:
+        history.pop(0)
+
+    return jsonify({"status": "ok"})
 
 
-# API to get latest data (GET)
+# ---------------- GET LATEST ----------------
 @app.route("/api/latest", methods=["GET"])
 def get_latest():
-    try:
-        with open(DATA_FILE, "r") as f:
-            lines = f.readlines()
-            if not lines:
-                return jsonify({})
-            latest = json.loads(lines[-1])
+    global latest_data
 
-        # Prepare AI features
-        now = datetime.now()
-        hour = now.hour
-        day = now.weekday()
-        occupancy = latest["occupancy_percentage"]
+    if not latest_data:
+        return jsonify({})
 
-        features = np.array([[hour, day, occupancy]])
+    latest = latest_data.copy()
 
-        prediction = model.predict(features)[0]
+    # AI Prediction
+    now = datetime.now()
+    features = np.array([[
+        now.hour,
+        now.weekday(),
+        latest.get("occupancy_percentage", 0)
+    ]])
 
-        label_map = {
-            0: "Low",
-            1: "Medium",
-            2: "High"
-        }
+    pred = model.predict(features)[0]
+    label_map = {0: "Low", 1: "Medium", 2: "High"}
 
-        latest["predicted_crowd"] = label_map[prediction]
+    latest["predicted_crowd"] = label_map[pred]
 
-        return jsonify(latest)
+    return jsonify(latest)
 
-    except Exception as e:
-        return jsonify({"error": str(e)})
+
+# ---------------- GET HISTORY (for graph) ----------------
+@app.route("/api/history", methods=["GET"])
+def get_history():
+    return jsonify(history)
+
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False, use_reloader=False)
