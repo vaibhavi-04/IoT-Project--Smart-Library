@@ -97,5 +97,6 @@ async function fetchData() {
 createSeats();
 createChart();
 
+
 // fetch every 5 sec
 setInterval(fetchData, 5000);
