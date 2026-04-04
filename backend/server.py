@@ -1,5 +1,7 @@
 import pickle
 import numpy as np
+import json
+import os
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from datetime import datetime
@@ -7,32 +9,41 @@ from datetime import datetime
 app = Flask(__name__)
 CORS(app)
 
+# ✅ DEFINE DATA FILE
+DATA_FILE = "data.json"
+
+# Ensure file exists
+if not os.path.exists(DATA_FILE):
+    open(DATA_FILE, "w").close()
+
 # Load AI model
 with open("../ai/model.pkl", "rb") as f:
     model = pickle.load(f)
 
-# In-memory storage (FAST + NO RELOAD)
 latest_data = {}
-history = []   # for graph
+history = []
 
-# ---------------- POST (ESP32 → Backend) ----------------
+# ---------------- POST ----------------
 @app.route("/api/data", methods=["POST"])
 def receive_data():
     global latest_data, history
 
     data = request.json
+    print("Received:", data)
+
     data["timestamp"] = datetime.now().isoformat()
 
-    # Save latest
     latest_data = data
 
-    # Store for graph
     history.append({
         "time": datetime.now().strftime("%H:%M:%S"),
         "occupancy": data["occupancy_percentage"]
     })
 
-    # keep last 20 points
+    # ✅ FIXED FILE WRITE
+    with open(DATA_FILE, "a") as f:
+        f.write(json.dumps(data) + "\n")
+
     if len(history) > 20:
         history.pop(0)
 
@@ -49,8 +60,8 @@ def get_latest():
 
     latest = latest_data.copy()
 
-    # AI Prediction
     now = datetime.now()
+
     features = np.array([[
         now.hour,
         now.weekday(),
@@ -58,14 +69,24 @@ def get_latest():
     ]])
 
     pred = model.predict(features)[0]
-    label_map = {0: "Low", 1: "Medium", 2: "High"}
+
+    # ✅ FIX BASED ON MODEL TYPE
+
+    # If using OLD model (3 classes)
+    # label_map = {0: "Low", 1: "Medium", 2: "High"}
+
+    # If using NEW next-hour model (binary)
+    label_map = {
+        0: "Not High (Next Hour)",
+        1: "High (Next Hour)"
+    }
 
     latest["predicted_crowd"] = label_map[pred]
 
     return jsonify(latest)
 
 
-# ---------------- GET HISTORY (for graph) ----------------
+# ---------------- GET HISTORY ----------------
 @app.route("/api/history", methods=["GET"])
 def get_history():
     return jsonify(history)

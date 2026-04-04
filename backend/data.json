@@ -1,0 +1,14 @@
+{"seats": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:44:51.448801"}
+{"seats": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:45:00.163394"}
+{"seats": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0], "occupied_seats": 0, "total_seats": 10, "occupancy_percentage": 0.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:45:09.029233"}
+{"seats": [0, 0, 0, 0, 0, 0, 0, 0, 1, 0], "occupied_seats": 1, "total_seats": 10, "occupancy_percentage": 10.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:45:17.821385"}
+{"seats": [0, 0, 0, 0, 0, 0, 1, 0, 1, 0], "occupied_seats": 2, "total_seats": 10, "occupancy_percentage": 20.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:45:26.516203"}
+{"seats": [1, 0, 0, 0, 0, 0, 1, 0, 1, 0], "occupied_seats": 3, "total_seats": 10, "occupancy_percentage": 30.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:46:04.374913"}
+{"seats": [1, 0, 0, 1, 0, 0, 1, 0, 1, 0], "occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:46:13.101600"}
+{"seats": [1, 0, 0, 1, 0, 0, 1, 0, 1, 1], "occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:46:35.966757"}
+{"seats": [1, 1, 0, 1, 0, 0, 1, 0, 1, 0], "occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:46:45.055383"}
+{"seats": [0, 1, 0, 1, 0, 0, 1, 0, 1, 0], "occupied_seats": 4, "total_seats": 10, "occupancy_percentage": 40.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:48:27.428043"}
+{"seats": [0, 1, 1, 1, 1, 0, 1, 0, 1, 0], "occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:48:36.267954"}
+{"seats": [0, 1, 1, 1, 1, 0, 1, 0, 1, 0], "occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:49:18.329865"}
+{"seats": [0, 1, 1, 1, 1, 0, 1, 1, 0, 0], "occupied_seats": 6, "total_seats": 10, "occupancy_percentage": 60.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:55:46.728504"}
+{"seats": [0, 1, 1, 1, 0, 0, 1, 1, 0, 0], "occupied_seats": 5, "total_seats": 10, "occupancy_percentage": 50.0, "noise_level": "Low", "noise_raw": 0, "timestamp": "2026-04-04T16:55:55.541226"}
